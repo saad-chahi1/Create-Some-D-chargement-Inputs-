@@ -1,0 +1,63 @@
+{
+  "finShifts": [
+    {
+      "shift": "option1",
+      "date": "2022-02-10",
+      "chefEscale": "option2",
+      "validation": true,
+      "id": 1
+    },
+    {
+      "finDechargement": "fffyf",
+      "finBuild": "ftfty",
+      "appareillage": "cfcfffffh",
+      "id": 2
+    },
+    {
+      "eta": "2022-02-01",
+      "fourchette": "option1",
+      "contrat": "dgfg",
+      "id": 3
+    },
+    {
+      "date": "2022-01-31",
+      "shift": "option2",
+      "chefEscale": "option2",
+      "operateur": "option2",
+      "debut": "2022-01-31",
+      "fin": "2022-02-23",
+      "grpEquipement": "option3",
+      "sysFonc": "option3",
+      "equipement": "option3",
+      "metier": "option1",
+      "cause": "option1",
+      "observation": "sss",
+      "categorieArret": "option1",
+      "id": 4
+    }
+  ],
+  "events": [
+    {
+      "shift": "option1",
+      "operateur": "option2",
+      "evenement": "option3",
+      "dateDebut": "ss",
+      "heureDebut": "ss",
+      "dateFin": "ggg",
+      "heureFin": "sss",
+      "observation": "zdzff",
+      "id": 1
+    },
+    {
+      "shift": "option1",
+      "operateur": "option2",
+      "evenement": "option3",
+      "dateDebut": "ss",
+      "heureDebut": "ss",
+      "dateFin": "ggg",
+      "heureFin": "sss",
+      "observation": "zdzff",
+      "id": 2
+    }
+  ]
+}

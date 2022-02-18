@@ -1,0 +1,28 @@
+<div class="container">
+    <form [formGroup]="verifyDechargement1FormGroup">
+        <div class="inputGridItem1 first-row">
+        <mat-form-field appearance="fill">
+            <mat-label>Eta</mat-label>
+            <input matInput type="date" formControlName="eta" required/>
+        </mat-form-field>  
+    
+        <mat-form-field class="inputGridItem" appearance="fill">
+            <mat-label>Fourchette</mat-label>
+            <mat-select formControlName="fourchette" required>
+            <mat-option>None</mat-option>
+            <mat-option value="option1">Option 1</mat-option>
+            <mat-option value="option2">Option 2</mat-option>
+            <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+            <mat-label>Contrat</mat-label>
+            <input matInput type="text" formControlName="contrat" required/>
+        </mat-form-field>          
+                            
+        </div>
+        
+          <button class="btn btn-info" (click)="VerifyDechargement()">Sauvegarder</button>
+    </form>
+</div>

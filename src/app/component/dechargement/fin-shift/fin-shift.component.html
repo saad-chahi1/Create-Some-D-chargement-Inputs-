@@ -1,0 +1,39 @@
+<div class="container">
+    <form [formGroup]="finShiftFormGroup">
+        <div class="inputGridItem1 first-row">
+        <mat-form-field appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput type="date" formControlName="date" required/>
+        </mat-form-field>  
+    
+        <mat-form-field class="inputGridItem" appearance="fill">
+            <mat-label>Shift</mat-label>
+            <mat-select formControlName="shift" required>
+            <mat-option>None</mat-option>
+            <mat-option value="option1">Option 1</mat-option>
+            <mat-option value="option2">Option 2</mat-option>
+            <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+            <mat-label>Chef d'escale</mat-label>
+            <mat-select formControlName="chefEscale" required>
+                <mat-option>None</mat-option>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+            </mat-form-field>          
+                            
+        </div>
+        <h4>Validation</h4>
+        <div class="form-check">
+            <input formControlName="validation" class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Fin Shift
+            </label>
+          </div>
+          <button class="btn btn-info" (click)="AddFinSchift()">Sauvegarder</button>
+    </form>
+</div>

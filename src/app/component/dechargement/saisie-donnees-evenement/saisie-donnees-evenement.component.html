@@ -1,0 +1,82 @@
+<div class="container mt-5">
+
+    <h4> Assistance de déchargement : </h4>
+    <form [formGroup]="evenementFormGroup">
+
+      <div class="inputGrid">
+        <div class="inputGridItem1">
+            <h3></h3>
+        </div>
+
+        <div class="inputGridItem1 first-row">
+          <mat-form-field class="inputGridItem" appearance="fill">
+            <mat-label>Shift</mat-label>
+            <mat-select formControlName="shift" required>
+              <mat-option>None</mat-option>
+              <mat-option value="option1">Option 1</mat-option>
+              <mat-option value="option2">Option 2</mat-option>
+              <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+              <mat-label>Opérateur</mat-label>
+              <mat-select formControlName="operateur" required>
+                <mat-option>None</mat-option>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+              </mat-select>
+            </mat-form-field>          
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Evénement</mat-label>
+                <mat-select formControlName="evenement" required>
+                  <mat-option>None</mat-option>
+                  <mat-option value="option1">Option 1</mat-option>
+                  <mat-option value="option2">Option 2</mat-option>
+                  <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>                       
+        </div>
+        <div class="inputGridItem1 first-row">
+          <mat-form-field class="inputGridItem" appearance="fill">
+            <mat-label>Date Début</mat-label>
+            <input matInput type="text" formControlName="dateDebut" required />
+          </mat-form-field>
+        
+          <mat-form-field class="inputGridItem" appearance="fill">
+            <mat-label>Heure Début</mat-label>
+            <input matInput type="text" formControlName="heureDebut" required />
+          </mat-form-field>
+        </div>
+        <div class="inputGridItem1 first-row">
+          <mat-form-field class="inputGridItem" appearance="fill">
+            <mat-label>Date Fin</mat-label>
+            <input matInput type="text" formControlName="dateFin" required />
+          </mat-form-field>
+        
+          <mat-form-field class="inputGridItem" appearance="fill">
+            <mat-label>Heure Fin</mat-label>
+            <input matInput type="text" formControlName="heureFin" required />
+          </mat-form-field>
+        </div>
+   
+        <div class="inputGridItem1">
+  
+            <mat-form-field appearance="fill">
+                <mat-label>Observation</mat-label>
+                <input matInput type="text" formControlName="observation" required/>
+              </mat-form-field>          
+        </div>
+
+        <div class="inputGridItem1">
+          <button mat-raised-button color="primary" (click)="AddNewEvent()">
+            Sauvegarder
+          </button>
+        </div>
+
+      </div>
+    </form>
+</div>

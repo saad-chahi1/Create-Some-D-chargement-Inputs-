@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="finDechargementFormGroup">
+        <div class="inputGridItem1 first-row">
+            <mat-form-field appearance="fill">
+                <mat-label>Fin de Déchargement</mat-label>
+                <input matInput type="text" formControlName="finDechargement" required/>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Fin de Buildozer</mat-label>
+                <input matInput type="text" formControlName="finBuild" required/>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Appareillage</mat-label>
+                <input matInput type="text" formControlName="appareillage" required/>
+            </mat-form-field>         
+        </div>
+          <button class="btn btn-info" (click)="AddFinDechargement()">Finir le déchargement</button>
+    </form>
+</div>
